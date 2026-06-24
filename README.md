@@ -1,21 +1,25 @@
 #### License
 MIT
 
-# Library Management System
+# 📚 Library Management System
 
-A Library Management System built using the Frappe Framework to automate library operations including book catalog management, member management, book issue/return tracking, overdue fine calculation, fine collection, reporting, and dashboard monitoring.
+A complete Library Management System built using **Frappe Framework v14** with support for book catalog management, member management, issue & return tracking, overdue fine management, reporting, dashboards, and role-based access.
 
 ## Overview
 
 This application digitizes and streamlines day-to-day library operations by providing:
 
-* Book Catalog Management
-* Member Management
-* Book Issue & Return
-* Overdue Detection
-* Fine Management
-* Reporting & Dashboard
-* Role-Based Access
+## Demo Features
+
+- 📖 Book Catalog Management
+- 👥 Member Registration
+- 📚 Book Issue & Return
+- ⏰ Automatic Due Date Calculation
+- 💰 Automatic Fine Calculation
+- 💳 Partial Fine Payment
+- 🎁 Fine Waiver
+- 📊 Reports & Dashboard
+- 🔐 Role Based Access
 
 ## Features
 
@@ -97,6 +101,11 @@ Outstanding amount is calculated automatically.
 
 ## Modules
 
+Master Data
+Transactions
+Reports
+Workspace Dashboard
+
 ### Master Data
 
 * Book Category
@@ -117,17 +126,36 @@ Outstanding amount is calculated automatically.
 
 ## Technology Stack
 
-* Frappe Framework v14
-* Python
-* MariaDB
-* JavaScript
+| Component | Version |
+|----------|----------|
+| Frappe Framework | v14 |
+| Python | 3.x |
+| MariaDB | 10.x |
+| JavaScript | ES6 |
 
 ## Installation
 
 ```bash
-bench get-app library_management
-bench --site [site-name] install-app library_management
+cd frappe-bench
+
+bench get-app https://github.com/SujeetKumar-1/library_management.git
+
+bench --site your-site install-app library_management
 ```
+
+## Initial Setup
+
+After installation:
+
+1. Open Library Settings.
+2. Configure:
+   - Loan Period
+   - Fine Per Day
+3. Create Book Categories.
+4. Add Books.
+5. Register Members.
+6. Start issuing books.
+
 
 ## Roles
 
@@ -154,11 +182,11 @@ bench --site [site-name] install-app library_management
 
 ## Future Enhancements
 
-* ERPNext Accounting Integration
-* Email Notifications for Overdue Books
-* Barcode-Based Book Tracking
-* Book Reservation System
-* Advanced Analytics Dashboard
+- Book Reservation
+- Email Reminder
+- Barcode / QR Code Support
+- ERPNext Accounting Integration
+- REST API
 
 ## Screenshot
 
@@ -190,8 +218,12 @@ bench --site [site-name] install-app library_management
 <img width="1123" height="565" alt="image" src="https://github.com/user-attachments/assets/7b150b5b-8edd-4d52-b8bc-6fc505d2679a" />
 
 
-## Author
+## Developer
 
-Sujeet Kumar
+**Sujeet Kumar**
 
-Built as part of a Library Management System assignment using the Frappe Framework.
+Python | Frappe | Fullstack Developer
+
+
+## License
+MIT
