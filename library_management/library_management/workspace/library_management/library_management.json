@@ -1,0 +1,197 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"p1fauUkzWZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Library Management</span>\",\"col\":12}},{\"id\":\"KTKsprvzdV\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"BSFaulZzju\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Total Books\",\"col\":3}},{\"id\":\"xXlXyuE3OR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Available Books\",\"col\":3}},{\"id\":\"vP_Oze7Oub\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Books Issued\",\"col\":3}},{\"id\":\"KUZcWQ09C8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Overdue Books\",\"col\":3}},{\"id\":\"Ri9jRpeh4l\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pending Fines\",\"col\":3}},{\"id\":\"P4-Vwu0OP4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Members\",\"col\":3}},{\"id\":\"UzWBRGlM5k\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fine Amount Outstanding\",\"col\":3}},{\"id\":\"3KPtK-WJrN\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"Q3L8mgjEC9\",\"type\":\"card\",\"data\":{\"card_name\":\"Shortcuts\",\"col\":4}},{\"id\":\"C9ixSCr5Xh\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
+ "creation": "2026-06-25 00:55:55.245936",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dashboard-list",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Library Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fine Collection Report",
+   "link_count": 0,
+   "link_to": "Fine Collection Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Member Activity Report",
+   "link_count": 0,
+   "link_to": "Member Activity Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Overdue Books Report",
+   "link_count": 0,
+   "link_to": "Overdue Books Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Shortcuts",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Books",
+   "link_count": 0,
+   "link_to": "Books",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Member",
+   "link_count": 0,
+   "link_to": "Library Member",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Book Issue",
+   "link_count": 0,
+   "link_to": "Book Issue",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fine Management",
+   "link_count": 0,
+   "link_to": "Fine Management",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Library Settings",
+   "link_count": 0,
+   "link_to": "Library Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-06-25 02:20:07.538641",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Library Administrator"
+  },
+  {
+   "role": "Library Staff"
+  },
+  {
+   "role": "Accounts Staff"
+  },
+  {
+   "role": "Management"
+  }
+ ],
+ "sequence_id": 24.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Total Books",
+   "link_to": "Books",
+   "stats_filter": "[[\"Books\",\"name\",\"!=\",null,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Pending Fines",
+   "link_to": "Fine Management",
+   "stats_filter": "[[\"Fine Management\",\"status\",\"=\",\"Pending\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Books Issued",
+   "link_to": "Book Issue",
+   "stats_filter": "[[\"Book Issue\",\"name\",\"!=\",null,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Fine Amount Outstanding",
+   "link_to": "Library Member",
+   "stats_filter": "[[\"Library Member\",\"outstanding_fine\",\">\",0,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Members",
+   "link_to": "Library Member",
+   "stats_filter": "[[\"Library Member\",\"name\",\"!=\",null,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Available Books",
+   "link_to": "Books",
+   "stats_filter": "[[\"Books\",\"available_copies\",\">\",0,false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Overdue Books",
+   "link_to": "Book Issue",
+   "stats_filter": "[[\"Book Issue\",\"status\",\"=\",\"Overdue\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Library Management"
+}
